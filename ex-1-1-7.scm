@@ -2,7 +2,7 @@
 
 
 (define (sqrt x)
-  (sqrt-iter x 1 0.001))
+  (sqrt-iter x 1.0 0.001))
 
 (define (sqrt-iter x guess close)
   (if (good-enough? x guess close)
