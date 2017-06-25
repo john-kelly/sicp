@@ -15,9 +15,6 @@
   (< (abs (- prev-guess guess))
      (* guess 0.001)))
 
-(define (average x y)
-  (/ (+ x y) 2))
-
 (define (improve x y)
   (/ (+ (/ x (square y))
         (* 2 y))
